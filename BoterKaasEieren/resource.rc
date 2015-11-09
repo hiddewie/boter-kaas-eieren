@@ -1,0 +1,25 @@
+#include <windows.h>
+#include <commctrl.h>
+#include <richedit.h>
+#include "resource.h"
+
+
+//
+// Menu resources
+//
+LANGUAGE 0, SUBLANG_NEUTRAL
+IDR_MAIN_MENU MENU
+{
+    POPUP "&File"
+    {
+		MENUITEM "&Opnieuw starten", IDM_RESTART
+		MENUITEM SEPARATOR
+        MENUITEM "&Exit", IDM_EXIT
+    }
+	POPUP "&Help"
+	{
+		MENUITEM "&About", IDM_ABOUT
+		MENUITEM "&Help", IDM_HELP
+	}
+
+}
